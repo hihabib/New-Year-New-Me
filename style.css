@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+h1 {
+    font-size: 38px;
+    text-align: center;
+}
+p {
+    text-align: left;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin:auto;
+    align-items: center;
+    height: 100vh;
+    column-gap: 20px;
+}
+.row>div:first-child {
+    flex-basis: 60%;
+}
+.right-content {
+    width: 30%;
+    float: right;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    padding-right: 10%;
+    height: 100%;
+    justify-content: center;
+}
+.person {
+    width: 70%;
+}
+.text-left {
+    text-align: left;
+}
+/*Button*/
+button {
+    cursor: pointer;
+}
+.danger {
+    background-color: tomato;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: none; 
+    font-weight: 700; 
+    margin-top: 20px;
+}
+.white {
+    background-color: white;
+    color: tomato;
+    border-radius: 5px;
+    padding: 15px 30px;
+    border: none; 
+    font-weight: 700; 
+    margin-top: 20px;
+}
+#hero {
+    background-image: url(./images/banner/banner1.png);
+    background-size: contain;
+    height: 100vh;
+}
+
+.mark {
+    text-align: left;
+    list-style: url('./images/icons/check.png');
+}
+.mark li {
+    padding: 7px 0
+}
+.plans {
+    display: flex;
+    column-gap: 50px;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+}
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plan span {
+    color: gray
+}
+.banner {
+    position: relative;
+    margin: auto;
+    display: flex;
+    margin-top: 250px;
+    align-items: center;
+    justify-content: center;
+    width: 1140px;
+}
+.watch, .gradient, .banner-text {
+    position: absolute;
+}
+.banner-text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.banner-text h1 {
+    color: white;
+    text-align: left;
+}
+.banner-text>div {
+    width: 50%
+}
+.footer .half:first-child {
+    flex-basis: 50%;
+}
+.footer .half:last-child {
+    flex-basis: 20%;
+    padding: 0;
+}
+footer {
+    margin-top: 250px;
+    background-color: black;
+    padding: 50px 0;
+}
+.footer {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .half:last-child>div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+footer * {
+    color: white;
+}
+.footer h1 {
+    text-align: left;
+}
+.social {
+    display: flex;
+    column-gap: 20px;
+}
+.email {
+    border: 1px solid white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: white;
+    width: 90%;
+    background-color: transparent;
+}
+.email::placeholder {
+    color: white;
+}
+.email:focus {
+    outline: 0;
+}
